@@ -1,0 +1,34 @@
+Here's a basic HTML template for the Prime Heist Game front page, including the connection to the contract using Web3.js:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Heist Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.3.0/dist/web3.min.js"></script>
+    <script src="web3.js"></script>
+</head>
+<body>
+    <h1>Welcome to Prime Heist</h1>
+    <p>Connect your wallet to start playing!</p>
+    <button onclick="connectWallet()">Connect Wallet</button>
+    <button onclick="startSession()">Start Session</button>
+    <!-- Add more buttons for other interactions -->
+    <div id="status"></div>
+</body>
+</html>
